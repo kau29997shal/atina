@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "9c42548d-9f35-425a-99db-06a51662477e",
+		"name": "atina",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18736928"
+	},
+	"item": [
+		{
+			"name": "userAdd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "fname",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": " lname",
+							"type": "text"
+						},
+						{
+							"key": "userName",
+							"value": " uname",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": " 123456789",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "name@example.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "9876543210",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/user/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:5000/user",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "fname",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "lastName",
+							"value": "lname",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userName",
+							"value": "uname",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "name@example.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "9876543210",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/user/login",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logoutUser",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "fname",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "lastName",
+							"value": "lname",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "userName",
+							"value": "uname",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "name@example.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "phone",
+							"value": "9876543210",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/user/logout",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changePassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "oldPassword",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "newPassword",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "cnfrmPassword",
+							"value": "1234567890",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/user/updatePassword",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"updatePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allContacts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:5000/contact",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "uname",
+							"type": "text"
+						},
+						{
+							"key": "newPassword",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "cnfrmPassword",
+							"value": "1234567890",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/user/forgetPassword",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"forgetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "resetPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userName",
+							"value": "uname",
+							"type": "text"
+						},
+						{
+							"key": "newPassword",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "cnfrmPassword",
+							"value": "1234567890",
+							"type": "text"
+						},
+						{
+							"key": "resetToken",
+							"value": "655824",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/user/resetPassword",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"user",
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "contactAdd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "fullName",
+							"value": "fname lname",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "name@example.com",
+							"type": "text"
+						},
+						{
+							"key": "conactNo",
+							"value": "9876543210",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "user address, nagpur",
+							"type": "text"
+						},
+						{
+							"key": "zip",
+							"value": "003300",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/contact/add",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"contact",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
